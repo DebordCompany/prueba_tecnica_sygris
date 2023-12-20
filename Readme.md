@@ -2,6 +2,10 @@
 
 Repositorio usado para realizar la prueba técnica Sygris
 
+## Mostrar resultado
+
+Para ver el resultado abrir el punto de entrada: index.html
+
 ## Build SetUp
 
 - Clonar repositorio.
