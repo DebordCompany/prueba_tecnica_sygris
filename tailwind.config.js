@@ -10,6 +10,8 @@ export const theme = {
     "bg": "#EFF4F6",
     "bg-hard": "#E1EAEF",
     "white": "#ffffff",
+    "white-soft": "#F5F8FA",
+    "grey": "#eff4f6",
   },
   fontFamily: {
     "roboto": ["Roboto", "sans-serif", "ui-sans-serif", "system-ui"],

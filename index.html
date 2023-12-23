@@ -44,7 +44,7 @@
             alt="Separator header"
           />
         </div>
-        <div id="logout">
+        <div id="logout" class="cursor-pointer">
           <img
             src="assets/img/menu/Icons/Switch.png"
             alt="Logout button"
@@ -55,160 +55,686 @@
       </nav>
     </header>
     <!-- Header End -->
+    <!-- Absolute Element -->
+    <div class="fixed bottom-3 left-3 flex items-stretch gap-1">
+      <div class="py-2 px-3 bg-bg-hard rounded-l-md">
+        <img
+          src="/assets/img/menu/Icons/SÍMBOLO-SIN-CAJA.png"
+          alt="no box simbol"
+          width="22"
+          height="24"
+        />
+      </div>
+      <div>
+        <p
+          class="px-5 py-3 bg-bg-hard rounded-r-md text-sm font-normal text-black-soft"
+        >
+          <span class="font-bold">Sygris.</span> Your data made simple
+        </p>
+      </div>
+    </div>
+    <!-- Absolute Element End -->
     <!-- Main -->
-    <main class="p-6 text-black-soft h-1/3 overflow-hidden">
-      <section class="grid grid-cols-1 md:grid-cols-4 gap-6">
+    <main class="p-6 text-black-soft h-1/3 max-w-[1366px] m-auto">
+      <section class="grid grid-cols-1 grid__custom gap-6">
         <!-- Modules -->
         <div class="md:col-start-1 md:col-end-4">
           <!-- Title modules -->
-          <div>
+          <div class="pb-6">
             <h2 class="text-sm">Hola Juan Fernández</h2>
             <h1 class="text-2xl">
               Bienvenido a <span class="text-primary">Sygris</span>
             </h1>
           </div>
           <!-- Title modules End -->
-          <!-- Modueles -->
+          <!-- Modueles inner -->
           <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-h-[80dvh] overflow-auto"
           >
-            <div class="items-start">
-              <div
-                class="rounded-t-md bg-white p-6 flex justify-between items-center gap-6"
-                id="modules"
-              >
-                <div class="flex items-center gap-4">
-                  <div class="p-2 bg-secondary rounded">
-                    <img
-                      src="/assets/img/menu/Icons/flower-modules.png"
-                      alt="Flower logo"
-                      width="16"
-                      height="16"
-                    />
+            <div class="flex flex-col gap-6">
+              <div class="items-start">
+                <div
+                  class="cursor-pointer rounded-t-md bg-white p-6 flex justify-between items-center gap-6 modules__title"
+                >
+                  <div class="flex items-center gap-4">
+                    <div class="p-2 bg-secondary rounded">
+                      <img
+                        src="/assets/img/menu/Icons/flower-modules.png"
+                        alt="Flower logo"
+                        width="16"
+                        height="16"
+                      />
+                    </div>
+                    <p>Módulo 1</p>
                   </div>
-                  <p>Módulo 1</p>
+                  <img
+                    src="/assets/img/menu/Icons/arrow-down.png"
+                    class="modules__arrow transitioned"
+                    alt="Arrow down icon"
+                    width="12"
+                    height="12"
+                  />
                 </div>
-                <img
-                  src="/assets/img/menu/Icons/arrow-down.png"
-                  alt="Arrow down icon"
-                  width="12"
-                  height="12"
-                />
+                <div
+                  class="bg-white rounded-b-md modules__items max-h-[1000px] transitioned"
+                >
+                  <ul>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Análisis</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Definición del plan</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Seguimiento del plan</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Cuadro de mandos</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Panel de control</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Usuarios</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="p-6 bg-white">hola</div>
+              <div class="items-start">
+                <div
+                  class="cursor-pointer rounded-t-md bg-white p-6 flex justify-between items-center gap-6 modules__title"
+                >
+                  <div class="flex items-center gap-4">
+                    <div class="p-2 bg-secondary rounded">
+                      <img
+                        src="/assets/img/menu/Icons/flower-modules.png"
+                        alt="Flower logo"
+                        width="16"
+                        height="16"
+                      />
+                    </div>
+                    <p>Módulo 4</p>
+                  </div>
+                  <img
+                    src="/assets/img/menu/Icons/arrow-down.png"
+                    class="modules__arrow transitioned"
+                    alt="Arrow down icon"
+                    width="12"
+                    height="12"
+                  />
+                </div>
+                <div
+                  class="bg-white rounded-b-md modules__items max-h-[1000px] transitioned"
+                >
+                  <ul>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Análisis</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Definición del plan</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Seguimiento del plan</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Cuadro de mandos</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Panel de control</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Usuarios</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="items-start">
-              <div
-                class="rounded-t-md bg-white p-6 flex justify-between items-center gap-6"
-                id="modules"
-              >
-                <div class="flex items-center gap-4">
-                  <div class="p-2 bg-secondary rounded">
-                    <img
-                      src="/assets/img/menu/Icons/flower-modules.png"
-                      alt="Flower logo"
-                      width="16"
-                      height="16"
-                    />
+            <div class="flex flex-col gap-6">
+              <div class="items-start">
+                <div
+                  class="cursor-pointer rounded-t-md bg-white p-6 flex justify-between items-center gap-6 modules__title"
+                >
+                  <div class="flex items-center gap-4">
+                    <div class="p-2 bg-secondary rounded">
+                      <img
+                        src="/assets/img/menu/Icons/flower-modules.png"
+                        alt="Flower logo"
+                        width="16"
+                        height="16"
+                      />
+                    </div>
+                    <p>Módulo 2</p>
                   </div>
-                  <p>Módulo 2</p>
+                  <img
+                    src="/assets/img/menu/Icons/arrow-down.png"
+                    class="modules__arrow transitioned"
+                    alt="Arrow down icon"
+                    width="12"
+                    height="12"
+                  />
                 </div>
-                <img
-                  src="/assets/img/menu/Icons/arrow-down.png"
-                  alt="Arrow down icon"
-                  width="12"
-                  height="12"
-                />
+                <div
+                  class="bg-white rounded-b-md modules__items max-h-[1000px] transitioned"
+                >
+                  <ul>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Análisis</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Definición del plan</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Seguimiento del plan</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Cuadro de mandos</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Panel de control</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Usuarios</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="p-6 bg-white">hola</div>
+              <div class="items-start">
+                <div
+                  class="cursor-pointer rounded-t-md bg-white p-6 flex justify-between items-center gap-6 modules__title"
+                >
+                  <div class="flex items-center gap-4">
+                    <div class="p-2 bg-secondary rounded">
+                      <img
+                        src="/assets/img/menu/Icons/flower-modules.png"
+                        alt="Flower logo"
+                        width="16"
+                        height="16"
+                      />
+                    </div>
+                    <p>Módulo 5</p>
+                  </div>
+                  <img
+                    src="/assets/img/menu/Icons/arrow-down.png"
+                    class="modules__arrow transitioned"
+                    alt="Arrow down icon"
+                    width="12"
+                    height="12"
+                  />
+                </div>
+                <div
+                  class="bg-white rounded-b-md modules__items max-h-[1000px] transitioned"
+                >
+                  <ul>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Análisis</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Definición del plan</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Seguimiento del plan</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Cuadro de mandos</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Panel de control</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Usuarios</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="items-start">
-              <div
-                class="rounded-t-md bg-white p-6 flex justify-between items-center gap-6"
-                id="modules"
-              >
-                <div class="flex items-center gap-4">
-                  <div class="p-2 bg-secondary rounded">
-                    <img
-                      src="/assets/img/menu/Icons/flower-modules.png"
-                      alt="Flower logo"
-                      width="16"
-                      height="16"
-                    />
+            <div class="flex flex-col gap-6">
+              <div class="items-start">
+                <div
+                  class="cursor-pointer rounded-t-md bg-white p-6 flex justify-between items-center gap-6 modules__title"
+                >
+                  <div class="flex items-center gap-4">
+                    <div class="p-2 bg-secondary rounded">
+                      <img
+                        src="/assets/img/menu/Icons/flower-modules.png"
+                        alt="Flower logo"
+                        width="16"
+                        height="16"
+                      />
+                    </div>
+                    <p>Módulo 3</p>
                   </div>
-                  <p>Módulo 3</p>
+                  <img
+                    src="/assets/img/menu/Icons/arrow-down.png"
+                    class="modules__arrow transitioned"
+                    alt="Arrow down icon"
+                    width="12"
+                    height="12"
+                  />
                 </div>
-                <img
-                  src="/assets/img/menu/Icons/arrow-down.png"
-                  alt="Arrow down icon"
-                  width="12"
-                  height="12"
-                />
-              </div>
-              <div class="p-6 bg-white">hola</div>
-            </div>
-            <div class="items-start">
-              <div
-                class="rounded-t-md bg-white p-6 flex justify-between items-center gap-6"
-                id="modules"
-              >
-                <div class="flex items-center gap-4">
-                  <div class="p-2 bg-secondary rounded">
-                    <img
-                      src="/assets/img/menu/Icons/flower-modules.png"
-                      alt="Flower logo"
-                      width="16"
-                      height="16"
-                    />
-                  </div>
-                  <p>Módulo 4</p>
+                <div
+                  class="bg-white rounded-b-md modules__items max-h-[1000px] transitioned"
+                >
+                  <ul>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Análisis</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Definición del plan</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Seguimiento del plan</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Cuadro de mandos</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Panel de control</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                    <li
+                      class="flex items-center justify-between py-4 px-6 border-t border-grey text-xs"
+                    >
+                      <p>Usuarios</p>
+                      <img
+                        src="assets/img/menu/Icons/arrow-modules.png"
+                        alt="Arrow modules image"
+                        width="4"
+                        height="7.3"
+                      />
+                    </li>
+                  </ul>
                 </div>
-                <img
-                  src="/assets/img/menu/Icons/arrow-down.png"
-                  alt="Arrow down icon"
-                  width="12"
-                  height="12"
-                />
               </div>
-              <div class="p-6 bg-white">hola</div>
-            </div>
-            <div class="items-start">
-              <div
-                class="rounded-t-md bg-white p-6 flex justify-between items-center gap-6"
-                id="modules"
-              >
-                <div class="flex items-center gap-4">
-                  <div class="p-2 bg-secondary rounded">
-                    <img
-                      src="/assets/img/menu/Icons/flower-modules.png"
-                      alt="Flower logo"
-                      width="16"
-                      height="16"
-                    />
-                  </div>
-                  <p>Módulo 5</p>
-                </div>
-                <img
-                  src="/assets/img/menu/Icons/arrow-down.png"
-                  alt="Arrow down icon"
-                  width="12"
-                  height="12"
-                />
-              </div>
-              <div class="p-6 bg-white">hola</div>
             </div>
           </div>
-          <!-- Modules End -->
+          <!-- Modules inner End -->
         </div>
         <!-- Modules End -->
         <!-- Aside -->
-        <aside class="bg-bg-hard p-6 rounded-md h-full">
+        <aside
+          class="bg-bg-hard p-6 rounded-md flex flex-col gap-6 justify-start h-[90dvh] overflow-auto"
+        >
           <img
             src="/assets/img/menu/Icons/Componentes sidebar.png"
             width="268"
             height="128"
             alt="Illustration sidebar "
           />
+          <section>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-6 items-center aside__button cursor-pointer">
+                <img
+                  src="/assets/img/menu/Icons/chevron-up.png"
+                  alt="Arrow down aside"
+                  width="16"
+                  height="16"
+                  class="aside__arrow"
+                />
+                <h2 class="font-medium">Texto informativo</h2>
+              </div>
+              <p class="text-black-soft text-xs aside__content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                est elit tortor, in sodales. Feugiat porttitor diam elementum
+                sed nulla adipiscing interdum Massa ac ornare dui adipiscing
+                platea diam. Habitant magna velit arcu enim pellentesque vitae
+                tortor.
+              </p>
+            </div>
+          </section>
+          <section>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-6 items-center aside__button cursor-pointer">
+                <img
+                  src="/assets/img/menu/Icons/chevron-up.png"
+                  alt="Arrow down aside"
+                  width="16"
+                  height="16"
+                  class="aside__arrow"
+                />
+                <h2 class="font-medium">Secciones destacadas</h2>
+              </div>
+              <div class="grid grid-cols-2 gap-2 aside__content">
+                <div
+                  class="bg-secondary p-3 rounded-md text-white flex flex-col gap-4"
+                >
+                  <img
+                    src="/assets/img/menu/Icons/connect.png"
+                    alt="Connect Illustration"
+                    width="13"
+                    height="13"
+                  />
+                  <div>
+                    <h7 class="font-medium">Sección 1</h7>
+                    <p>Lorem ipsum</p>
+                  </div>
+                </div>
+                <div
+                  class="bg-yellow p-3 rounded-md text-white flex flex-col gap-4"
+                >
+                  <img
+                    src="/assets/img/menu/Icons/connect.png"
+                    alt="Connect Illustration"
+                    width="13"
+                    height="13"
+                  />
+                  <div>
+                    <h7 class="font-medium">Sección 2</h7>
+                    <p>Lorem ipsum</p>
+                  </div>
+                </div>
+                <div
+                  class="bg-primary col-start-1 col-end-3 p-3 rounded-md text-white flex flex-col gap-4"
+                >
+                  <img
+                    src="/assets/img/menu/Icons/connect.png"
+                    alt="Connect Illustration"
+                    width="13"
+                    height="13"
+                  />
+                  <div>
+                    <h7 class="font-medium">Sección 3</h7>
+                    <p>Lorem ipsum</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-6 items-center aside__button cursor-pointer">
+                <img
+                  src="/assets/img/menu/Icons/chevron-up.png"
+                  alt="Arrow down aside"
+                  width="16"
+                  height="16"
+                  class="aside__arrow"
+                />
+                <h2 class="font-medium">Botones de acción</h2>
+              </div>
+
+              <div class="grid grid-cols-1 gap-4 aside__content">
+                <div class="flex flex-col gap-2">
+                  <div
+                    class="bg-white-soft p-3 rounded-md text-black-soft flex items-center gap-4 cursor-pointer"
+                  >
+                    <img
+                      src="/assets/img/menu/Icons/arrow-rigth.png"
+                      alt="Connect Illustration"
+                      width="16"
+                      height="16"
+                    />
+                    <p>Registro de propuestas</p>
+                  </div>
+                  <div
+                    class="bg-white-soft p-3 rounded-md text-black-soft flex items-center gap-4 cursor-pointer"
+                  >
+                    <img
+                      src="/assets/img/menu/Icons/arrow-rigth.png"
+                      alt="Connect Illustration"
+                      width="16"
+                      height="16"
+                    />
+                    <p>Datos globales</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-4">
+                  <div
+                    class="p-3 border border-primary rounded-md text-primary flex items-center gap-4 cursor-pointer"
+                  >
+                    <img
+                      src="/assets/img/menu/Icons/arrow-alt-to-bottom 1.png"
+                      alt="Connect Illustration"
+                      width="16"
+                      height="16"
+                    />
+                    <p>Datos globales</p>
+                  </div>
+                  <div
+                    class="p-3 bg-primary rounded-md text-white flex items-center gap-4 cursor-pointer"
+                  >
+                    <img
+                      src="/assets/img/menu/Icons/arrow-circle-right-light.png"
+                      alt="Connect Illustration"
+                      width="16"
+                      height="16"
+                    />
+                    <p>Datos globales</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </aside>
         <!-- Aside End -->
       </section>

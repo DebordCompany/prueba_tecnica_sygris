@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.modules__hidden {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+.modules__arrow__transform {
+  transform: rotate(180deg);
+}
+.transitioned {
+  transition: all 0.2s ease-in;
+}
+@media (min-width: 768px) {
+  .grid__custom {
+    grid-template-columns: 1fr 1fr 1fr 312px;
+  }
+}
